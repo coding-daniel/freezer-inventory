@@ -1,0 +1,29 @@
+{
+  "name": "freezerinventoryapp",
+  "version": "1.0.0",
+  "description": "[![Run Python Tests](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml/badge.svg?branch=develop)](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-daniel/freezer-inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-daniel/freezer-inventory/issues"
+  },
+  "homepage": "https://github.com/coding-daniel/freezer-inventory#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "semantic-release": "^24.2.5"
+  }
+}

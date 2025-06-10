@@ -104,8 +104,22 @@ def main():
                 print("❌ Invalid quantity.")
                 continue
             quantity = int(quantity)
+            name, weight = manager.fetch_product_info(barcode)
+
+            # If not found, ask the user
+            if name == "Unknown product":
+                print("⚠️ Product not found in Open Food Facts.")
+                name = input("Enter product name manually: ").strip()
+                weight = input("Enter product weight (e.g. 500 g): ").strip()
+
             item = manager.add_item(barcode, quantity)
+            # Inject manual name/weight if needed
+            item['name'] = name
+            item['weight'] = weight
+            manager.save_inventory()
+
             print(f"✅ Added: {quantity} x {item['name']} ({item['weight']})")
+
 
         elif choice == '2':
             barcode = input("Enter barcode to remove quantity from: ").strip()

@@ -58,3 +58,29 @@ def test_remove_product(manager):
 def test_remove_nonexistent_product(manager):
     success = manager.remove_product("999")
     assert success is False
+
+def test_add_item_manually_after_api_fail(manager):
+    # Simulate a failed fetch
+    class FailingMockedInventoryManager(InventoryManager):
+        def fetch_product_info(self, barcode):
+            return "Unknown product", "Unknown"
+
+    test_manager = FailingMockedInventoryManager(filename=TEST_CSV)
+    
+    barcode = "0000000000000"
+    quantity = 1
+
+    # Add item (unknown returned, assume manual override)
+    item = test_manager.add_item(barcode, quantity)
+    item['name'] = "Manual Couscous"
+    item['weight'] = "1 kg"
+    test_manager.save_inventory()
+
+    # Reload inventory to verify persistence
+    test_manager = FailingMockedInventoryManager(filename=TEST_CSV)
+    stored_item = test_manager.inventory[barcode]
+
+    assert stored_item['name'] == "Manual Couscous"
+    assert stored_item['weight'] == "1 kg"
+    assert stored_item['quantity'] == 1
+

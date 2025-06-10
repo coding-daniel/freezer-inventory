@@ -1,19 +1,16 @@
-# Python cache files
+# ------------------------
+# Python
+# ------------------------
 __pycache__/
 *.py[cod]
 *.so
-
-# Virtual environments
 venv/
+*.log
+*.tmp
 
-# macOS system files
-.DS_Store
-
-# VSCode settings (optional)
-.vscode/
-
-# Test artifacts and logs
-inventory/test_inventory.csv
+# ------------------------
+# Test artifacts and coverage
+# ------------------------
 pytest_cache/
 coverage.*
 *.log
@@ -21,3 +18,18 @@ coverage.*
 
 # Ignore all inventory files (personal data)
 inventory/*.csv
+
+# ------------------------
+# Node.js / semantic-release
+# ------------------------
+node_modules/
+package-lock.json
+
+# Optional: ignore generated changelog if you don't want it tracked
+CHANGELOG.md
+
+# ------------------------
+# macOS & Editor Configs
+# ------------------------
+.DS_Store
+.vscode/
