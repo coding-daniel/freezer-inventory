@@ -1,6 +1,6 @@
 # 📦 Freezer Inventory App
 
-[![Run Python Tests](https://github.com/YOUR_USERNAME/FREEZER_INVENTORY_REPO/actions/workflows/python-tests.yml/badge.svg)](https://github.com/YOUR_USERNAME/FREEZER_INVENTORY_REPO/actions/workflows/python-tests.yml)
+[![Run Python Tests](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml/badge.svg)](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml)
 
 A minimal barcode-based inventory tracker built with Python.
 
