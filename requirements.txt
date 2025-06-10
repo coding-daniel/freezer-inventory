@@ -1,0 +1,14 @@
+# Makes HTTP requests to external APIs (e.g., Open Food Facts)
+requests
+
+# Decodes barcodes from images (e.g., product packaging photos)
+pyzbar
+
+# Required by pyzbar to load and handle images
+Pillow
+
+# Runs your tests simply and clearly
+pytest
+
+# Optional: measures code coverage when running tests
+pytest-cov
