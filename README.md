@@ -1,5 +1,8 @@
 # 📦 Freezer Inventory App
 
+[![Release](https://github.com/coding-daniel/freezer-inventory/actions/workflows/release.yml/badge.svg?branch=develop)](https://github.com/coding-daniel/freezer-inventory/actions/workflows/release.yml)
+
+
 [![Run Python Tests](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml/badge.svg?branch=develop)](https://github.com/coding-daniel/freezer-inventory/actions/workflows/python-tests.yml)
 
 
