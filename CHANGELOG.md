@@ -1,3 +1,15 @@
+# 1.0.0 (2025-06-11)
+
+
+### Bug Fixes
+
+* **ci:** use npm install instead of npm ci ([e164118](https://github.com/coding-daniel/freezer-inventory/commit/e164118883253f0ff8debe31b8dbe420f89524c7))
+
+
+### Features
+
+* support manual entry fallback when barcode not found, set up semantic-release ([5f55d90](https://github.com/coding-daniel/freezer-inventory/commit/5f55d9022fe3b5d8c1bef6113e143234c91582a1))
+
 # 📦 Changelog
 
 All notable changes to this project will be documented in this file.
