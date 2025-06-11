@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/coding-daniel/freezer-inventory/compare/v0.1.0...v0.1.1) (2025-06-11)
+
+
+### Bug Fixes
+
+* trigger patch version bump ([f7b74ec](https://github.com/coding-daniel/freezer-inventory/commit/f7b74ecfc4efd8e9ca43f33b2f0fc05ee582724e))
+
 # 1.0.0 (2025-06-11)
 
 
