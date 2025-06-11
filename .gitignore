@@ -13,20 +13,21 @@ venv/
 # ------------------------
 pytest_cache/
 coverage.*
-*.log
-*.tmp
+# No need to duplicate *.log and *.tmp here again
 
-# Ignore all inventory files (personal data)
+# ------------------------
+# Inventory (contains personal data)
+# ------------------------
 inventory/*.csv
 
 # ------------------------
 # Node.js / semantic-release
 # ------------------------
 node_modules/
+# Optional: only ignore if you don't want to track lockfile (common in libraries)
+# If using npm ci in CI and want reproducibility, consider tracking it
+# Otherwise, this is fine:
 package-lock.json
-
-# Optional: ignore generated changelog if you don't want it tracked
-CHANGELOG.md
 
 # ------------------------
 # macOS & Editor Configs
