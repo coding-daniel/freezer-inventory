@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Freezer Inventory Scanner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freezer Inventory</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Scan a Barcode</h1>
+  <h1>Freezer Inventory</h1>
+  <p>Click the button below to simulate a scan.</p>
+  <button onclick="scanBarcode()">Scan</button>
 
-    <!-- Optional test button -->
-    <button onclick="testScan()">Test Scanner Button</button>
-
-    <script>
-        function testScan() {
-            alert("📦 Simulated barcode scanned!");
-        }
-    </script>
-
-    <!-- Load scanner.js -->
-    <script src="{{ url_for('static', filename='scanner.js') }}"></script>
+  <script>
+    function scanBarcode() {
+      alert("📦 Simulated scan: barcode 1234567890128");
+    }
+  </script>
 </body>
 </html>

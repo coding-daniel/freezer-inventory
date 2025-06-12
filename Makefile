@@ -1,20 +1,28 @@
-# Makefile for FreezerInventoryApp
+# Run the main CLI app
+run-cli:
+	python src/freezer_inventory/main.py
 
-.PHONY: run test freeze clean
-
-# Run the main application
+# Run the Flask web server
 run:
-	@python src/freezer_inventory/main.py
+	python src/web/api.py
 
-# Run all tests using pytest
+# Run tests using pytest
 test:
-	@pytest
+	pytest tests
 
-# Update requirements.txt with current environment
-freeze:
-	@pip freeze > requirements.txt
+# Format with black (optional)
+format:
+	black src tests
 
-# Remove __pycache__ and test artifacts
+# Install dependencies
+install:
+	pip install -r requirements.txt
+
+# Clean up Python cache files
 clean:
-	@find . -type d -name "__pycache__" -exec rm -r {} +
-	@rm -f inventory/test_inventory.csv
+	find . -type d -name "__pycache__" -exec rm -r {} +
+	find . -name "*.pyc" -delete
+
+# Force semantic-release dry-run (for testing locally)
+dry-release:
+	npx semantic-release --dry-run
