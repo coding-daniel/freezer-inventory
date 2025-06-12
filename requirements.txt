@@ -12,3 +12,6 @@ pytest
 
 # Optional: measures code coverage when running tests
 pytest-cov
+
+# Web server
+flask>=2.0

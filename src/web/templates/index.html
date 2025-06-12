@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freezer Inventory Scanner</title>
+</head>
+<body>
+    <h1>Scan a Barcode</h1>
+
+    <!-- Optional test button -->
+    <button onclick="testScan()">Test Scanner Button</button>
+
+    <script>
+        function testScan() {
+            alert("📦 Simulated barcode scanned!");
+        }
+    </script>
+
+    <!-- Load scanner.js -->
+    <script src="{{ url_for('static', filename='scanner.js') }}"></script>
+</body>
+</html>
