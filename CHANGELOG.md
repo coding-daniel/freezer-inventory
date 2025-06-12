@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/coding-daniel/freezer-inventory/compare/v0.1.1...v0.2.0) (2025-06-12)
+
+
+### Features
+
+* **web:** scaffolded Flask UI with working scanner.js placeholder ([798e176](https://github.com/coding-daniel/freezer-inventory/commit/798e176f0877dc0ec5935aa25e539ad600d8289b))
+
 ## [0.1.1](https://github.com/coding-daniel/freezer-inventory/compare/v0.1.0...v0.1.1) (2025-06-11)
 
 
